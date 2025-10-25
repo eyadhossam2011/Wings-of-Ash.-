@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'El Messiri', sans-serif;
+  background-color: #0b0b0b;
+  color: #f2f2f2;
+  text-align: center;
+  background-image: url('cover.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.overlay {
+  background: rgba(0,0,0,0.85);
+  min-height: 100vh;
+  padding: 40px;
+}
+nav {
+  margin-bottom: 20px;
+}
+nav a {
+  color: #ff5555;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #ff9999;
+}
+h1 {
+  font-size: 3em;
+  color: #ff3333;
+  text-shadow: 0 0 15px #ff0000;
+}
+h2 {
+  color: #ff5555;
+}
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 0;
+}
+a.button {
+  background: linear-gradient(90deg,#ff0000,#800000);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+a.button:hover {
+  background: linear-gradient(90deg,#ff4444,#aa0000);
+}
+.character-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px #200;
+}
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+audio {
+  display: none;
+}
