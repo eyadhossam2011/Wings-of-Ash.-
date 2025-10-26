@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>أجنحة الرماد – Wings of Ash</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- موسيقى خلفية -->
   <audio id="bg-music" autoplay loop>
     <source src="https://files.catbox.moe/6a6g5l.mp3" type="audio/mpeg">
   </audio>
 
-  <div class="transition"></div>
+  <!-- شاشة البداية -->
+  <section class="page active" id="home">
+    <div class="overlay">
+      <h1 class="title">أجنحة الرماد</h1>
+      <h2 class="subtitle">Wings of Ash</h2>
+      <p class="intro">في عالمٍ غارقٍ في الرماد والنار، يولد فتى بأجنحة محترقة.</p>
+      <a href="#about" class="btn">ابدأ الرحلة</a>
+    </div>
+  </section>
 
-  <header>
-    <h1 class="fade-in">أجنحة الرماد</h1>
-    <h2 class="fade-in">Wings of Ash</h2>
-    <nav>
-      <a href="index.html" class="nav-link">الرئيسية</a>
-      <a href="about.html" class="nav-link">عن الرواية</a>
-      <a href="characters.html" class="nav-link">الشخصيات</a>
-      <a href="volumes.html" class="nav-link">الأجزاء</a>
-    </nav>
-  </header>
+  <!-- صفحة عن الرواية -->
+  <section class="page" id="about">
+    <div class="overlay">
+      <h2>عن الرواية</h2>
+      <p>تدور أحداث الرواية في عالمٍ سقط فيه النور وابتلعته النيران، حيث يسعى "رين" لاكتشاف سرّ أجنحته الملعونة.</p>
+    </div>
+  </section>
 
-  <main class="fade-in">
-    <p>في عالم غارقٍ في الرماد والدمار، يولد فتى يحمل أجنحةً محترقة، بين قدرٍ مظلمٍ وحلمٍ بالخلاص.</p>
-    <a href="https://www.mediafire.com/file/ap1irl7hwknf8il/Wings+of+Ash+–+أجنحة+الرماد+.epub/file" class="button" target="_blank">
-      تحميل الرواية (EPUB)
-    </a>
-  </main>
+  <!-- صفحة الشخصيات -->
+  <section class="page" id="characters">
+    <div class="overlay">
+      <h2>الشخصيات</h2>
+      <div class="chars">
+        <div class="char">رين</div>
+        <div class="char">ليا</div>
+        <div class="char">سيلين</div>
+        <div class="char">كاين</div>
+        <div class="char">ميدوها</div>
+        <div class="char">إيريس</div>
+        <div class="char">هارو</div>
+        <div class="char">سيد الظلام</div>
+      </div>
+    </div>
+  </section>
 
-  <canvas id="ash"></canvas>
-
-  <footer>
-    © إياد حسام صبري محمد بدوي حيرم – جميع الحقوق محفوظة
-  </footer>
+  <!-- صفحة التحميل -->
+  <section class="page" id="download">
+    <div class="overlay">
+      <h2>تحميل الرواية</h2>
+      <a href="https://www.mediafire.com/file/ap1irl7hwknf8il/Wings+of+Ash+–+أجنحة+الرماد+.epub/file" class="btn" target="_blank">تحميل (EPUB)</a>
+      <p>© إياد حسام – جميع الحقوق محفوظة</p>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
