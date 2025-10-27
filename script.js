@@ -1,11 +1,7 @@
-// انتقال تلقائي بين الصفحات
-let pages = document.querySelectorAll('.page');
-let index = 0;
-
-function nextPage() {
-  pages[index].classList.remove('active');
-  index = (index + 1) % pages.length;
-  pages[index].classList.add('active');
+// تأثير بسيط للوميض في الانترو
+const title = document.querySelector('.intro-content h1');
+if (title) {
+  setInterval(() => {
+    title.style.textShadow = `0 0 ${Math.random() * 30}px #ff0000`;
+  }, 500);
 }
-
-setInterval(nextPage, 6000); // كل 6 ثواني يتغير المشهد
